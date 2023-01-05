@@ -29,7 +29,7 @@ public class T1_Alert_Practices {
    @Test
    public void alert_test1(){
         //3. Click to "Click for JS Alert" button
-       WebElement informationAlertButton = driver.findElement(By.xpath("//button[.=Click for JS Alert']"));
+       WebElement informationAlertButton = driver.findElement(By.xpath("//button[.='Click for JS Alert']"));
        informationAlertButton.click();
 
         //4. Click to OK button from the alert
