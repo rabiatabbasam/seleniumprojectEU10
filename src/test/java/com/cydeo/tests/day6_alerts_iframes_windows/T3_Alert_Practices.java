@@ -36,9 +36,10 @@ public class T3_Alert_Practices {
          //4. Send “hello” text to alert
          Alert alert = driver.switchTo().alert();
          alert.sendKeys("hello");
-         alert.accept();
 
          //5. Click to OK button from the alert
+         alert.accept();
+
          WebElement resultText = driver.findElement(By.xpath("//p[@id='result']"));
 
          Assert.assertTrue(resultText.isDisplayed(), "Result text is NOT displayed");
