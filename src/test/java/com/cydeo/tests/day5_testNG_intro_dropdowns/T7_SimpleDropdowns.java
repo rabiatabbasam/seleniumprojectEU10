@@ -40,6 +40,7 @@ dropdownLink.click();
         String expectedTitle = "Facebook - Log In or Sign Up";
         String actualTitle = driver.getTitle();
 
+
         Assert.assertEquals(actualTitle, expectedTitle, "Actual title is Not matching expected");
 
 
@@ -54,5 +55,5 @@ dropdownLink.click();
 
 
 
-//        5. Verify title is “Facebook - Log In or Sign Up”
+
 
