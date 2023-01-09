@@ -61,6 +61,23 @@ public class T3_CRM_LOGIN {
 
     }
 
+    @Test
+    public void crm_login_test_3() {
+        //2. Go to:  https://login1.nextbasecrm.com/
+        driver.get("https://login1.nextbasecrm.com/");
+
+        //calling my utility method to login helpdesk1
+        CRM_Utilities.crm_login(driver,"helpdesk2@cybertekschool.com","UserUser");
+
+        //6. Verify Title is as expected
+        //Expected: Portal
+        //BrowserUtils.sleep(2);
+        BrowserUtils.verifyTitle(driver, "(2) Portal");
+
+
+    }
+
+
 
 }
 
