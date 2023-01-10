@@ -23,6 +23,9 @@ public class ReadingProperties {
         //4- Use "properties2 object to read value
         System.out.println("properties.getProperty(\"browser\") = " + properties.getProperty("browser"));
 
+        System.out.println("properties.getProperty(\"env\") = " + properties.getProperty("env"));
+
+        System.out.println("properties.getProperty(\"username\") = " + properties.getProperty("username"));
 
     }
 
