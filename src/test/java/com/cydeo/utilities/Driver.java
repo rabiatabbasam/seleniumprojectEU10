@@ -45,10 +45,7 @@ public class Driver {
       switch statement will determine the case, and open the matching browser
        */
 
-
-
-
-        switch (browserType){
+            switch (browserType){
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 driver= new ChromeDriver();
@@ -63,15 +60,10 @@ public class Driver {
                 break;
         }
 
-
-
-
         }
 
         return driver;
 
     }
-
-
 
 }
