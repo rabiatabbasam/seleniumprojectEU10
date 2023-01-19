@@ -3,6 +3,7 @@ package com.cydeo.tests.day10_upload_actions_jsexecutor;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.Driver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
@@ -26,6 +27,11 @@ public class T4_Scroll_Practice {
         actions.moveToElement(poweredByCydeo).perform();
 
         //Assert.assertTrue(poweredByCydeo.isDisplayed());
+        //TC#5: Scroll practice 2
+
+        BrowserUtils.sleep(1);
+        //2.Scroll backup to "Home" link using PageUP button
+        actions.sendKeys(Keys.PAGE_UP).perform();
 
 
     }
