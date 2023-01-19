@@ -12,7 +12,7 @@ public class T2_Upload_Practice {
     @Test
     public  void upload_test(){
        //TC#2 Upload Test
-       //1.  Go to Website: https://practice.cydeo.com/upload
+       //1.  Go to  https://practice.cydeo.com/upload
         Driver.getDriver().get("https://practice.cydeo.com/upload");
 
        //2. find some small file from your computer, and get the path of it.
@@ -26,9 +26,6 @@ public class T2_Upload_Practice {
 
         WebElement uploadButton = Driver.getDriver().findElement(By.id("file-submit"));
         uploadButton.click();
-
-
-
 
         //4. Assert
         //-File uploaded text is displayed
