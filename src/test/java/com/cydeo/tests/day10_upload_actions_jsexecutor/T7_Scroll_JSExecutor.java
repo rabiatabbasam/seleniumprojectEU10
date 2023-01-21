@@ -9,10 +9,10 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class T7_JavaScriptExecutor2 {
+public class T7_Scroll_JSExecutor {
 
     @Test
-    public void javascript_executor_test2(){
+    public void task7_scroll_test(){
        //1- Open a Chrome browser
         //2- Go to:https://practice.cydeo.com/large
         Driver.getDriver().get("https://practice.cydeo.com/large");
