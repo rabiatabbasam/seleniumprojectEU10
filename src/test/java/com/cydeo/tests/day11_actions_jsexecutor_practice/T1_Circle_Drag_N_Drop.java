@@ -24,8 +24,8 @@ public class T1_Circle_Drag_N_Drop {
 
         //2. Drag and drop the small circle to bigger circle.
         Actions actions = new Actions(Driver.getDriver());
-        actions.dragAndDrop(smallCircle, bigCircle).perform();
-
+       // actions.dragAndDrop(smallCircle, bigCircle).perform();
+      actions.clickAndHold(smallCircle).pause(2000).moveToElement(bigCircle).pause(2000).release().perform();
 
         //3. Assert:
         //-Text in big circle changed to: "You did great!"
@@ -34,6 +34,7 @@ public class T1_Circle_Drag_N_Drop {
        String expectedBigCircleText = "You did great!";
 
         Assert.assertEquals(actualBigCircleText, expectedBigCircleText);
+        Driver.closeDriver();
 
 
 
