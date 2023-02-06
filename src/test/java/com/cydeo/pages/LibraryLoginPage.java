@@ -15,10 +15,27 @@ public class LibraryLoginPage {
 
         PageFactory.initElements(Driver.getDriver(), this);
 
+
     }
 
     //#2. use @FindBy annotation to locate web elements
     @FindBy(xpath = "//input[@id='inputEmail']")
     public WebElement inputUsername;
+
+    @FindBy(xpath = "//input[@id='inputPassword']")
+   public WebElement inputPassword;
+
+
+    @FindBy(xpath = "//button[.='Sign in']")
+    public WebElement signInButton;
+
+    @FindBy(xpath = "//div[.='This field is reuired.']/div")
+    public WebElement fieldRequiredErrorMessage;
+
+    @FindBy(xpath ="//div[.='Please enter a valid email address.']/div" )
+    public WebElement enterValidEmailErrorMessage;
+
+    @FindBy(xpath = "//div[.='Sorry, Wrong Email or Passsword']")
+    public WebElement wrongEmailOrPasswordErrorMessage;
 
 }
